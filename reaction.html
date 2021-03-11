@@ -32,12 +32,12 @@
     count=0;
     function startTime()
     {
-        
-       for(let i=0;i<4;i++)
+        var randomNum = Math.floor(Math.random() * 10) + 2;
+       for(let i=0;i<randomNum+1;i++)
         {
             setTimeout(function (){
                  document.getElementById("countdown").innerHTML=i;
-            },(3-i)*1000)
+            },(randomNum-i)*1000)
         }
 
     

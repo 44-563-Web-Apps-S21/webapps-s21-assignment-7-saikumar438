@@ -56,13 +56,13 @@
         if (listyItems.length > 9) {
             var x = 0
             for (var list of listyItems) {
-                if (list.innerHTML == inputText) {
+                if (list.innerHTML == text) {
                     listyItems[x].remove();
                     console.log(x)
                     console.log(listyItems[x])
                 } else {
-                    let num=Math.floor(Math.random()*listyItems.length)
-                    listyItems[num].remove();
+                    let randomNum=Math.floor(Math.random()*listyItems.length)
+                    listyItems[randomNum].remove();
                 }
                 x++;
             }
